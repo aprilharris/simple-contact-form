@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8" />
+
+<!--Responsive Viewport-->
+<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1" />
+
+<!--Page Title-->
+<title>p270|aprilharris.co</title>
+
+<!-- Web Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+<!--CUSTOM CSS-->
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<!-- FONTAWESOME -->
+<script src="https://kit.fontawesome.com/267ed9a0a2.js"></script>
+</head>
+<body>
+
+  <main class="container-fluid">
+<header class="container-fluid" style="background-color: #a7c9ba;">
+  <section class="section">      
+      <h1 class="has-text-light has-text-weight-bold is-size-1">Let's talk.</h1>
+    </section>
+</header>
+
+
+    <!-- FORM  -->
+<form class="container">
+    <br />
+      <!-- FIRST NAME  -->
+  <section class="field">
+  <!-- TEXT INPUT: FIRST NAME -->
+  <label class="label" for="name">First Name&emsp;</label>
+  <input class="input" type="text" id="fn" name="first_name" placeholder="First Name" 
+  required data-required-text="Please enter your first name."
+  aria-describedby="name-validation">
+  <br />
+  <div id="fn-validation" class="" role="alert" aria-hidden="true" data-linked-input="name">
+  </div>
+</section>
+
+<!-- LAST NAME -->
+  <section class="field">
+    <!-- TEXT INPUT: LAST NAME -->
+  <label class="label" for="name">Last Name&emsp;</label>
+  <input class="input" type="text" id="ln" name="last_name" placeholder="Last Name" required data-required-text="Please enter your last name." aria-describedby="name-validation">
+  <br />
+  <div id="ln-validation" class="" role="alert" aria-hidden="true" data-linked-input="ln">
+  </div>
+</section>
+  <!-- DATE OF BIRTH -->
+<section id="dobInput" class="columns"> 
+    <div class="column is-one-third">
+        <!-- MONTH -->
+        <label class="label" for="month">Month&emsp;</label> <input aria-describedby="bday-month-validation" aria-labelledby="date-of-birth-label" class="input is-small" 
+        placeholder="MM"
+        data-pattern-mismatch-text="Please provide a valid month of birth" data-required-text="Please provide a month of birth" id="bday-month" name="bday-month" pattern="^\d{1,2}$"  required type="tel"> <!-- BIRTHMONTH VALIDATION -->
+         <!-- MUST MATCH JS FUNCTIONS -->
+        <div aria-hidden="true" class="c-input-validation" data-linked-input="bday-month" id="bday-month-validation" role="alert"></div>
+        </div>
+    <div class="column is-one-third">
+        <!-- DAY -->
+        <label class="label" for="day">Day&emsp;</label> <input aria-describedby="bday-year-validation" aria-labelledby="date-of-birth-label" class="input is-small" data-pattern-mismatch-text="Please provide a valid year of birth" data-required-text="Please provide a year of birth" id="bday-year" name="bday-year" pattern="^\d{4}$" placeholder="YYYY" required="" type="tel"> <!-- BIRTHDAY VALIDATION -->
+        <div aria-hidden="true" class="c-input-validation" data-linked-input="bday-day" id="bday-day-validation" role="alert"></div>
+        </div>
+    <div class="column is-one-third">
+        <!-- YEAR -->
+            <label class="label" for="year">Year&emsp;</label> 
+            <input aria-describedby="bday-year-validation" aria-labelledby="date-of-birth-label" class="input is-small" data-pattern-mismatch-text="Please provide a valid year of birth" data-required-text="Please provide a year of birth" id="bday-year" name="bday-year" pattern="^\d{4}$" placeholder="YYYY" required="" type="tel"> <!-- BIRTHYEAR VALIDATION -->
+            <div aria-hidden="true" class="c-input-validation" data-linked-input="bday-year" id="bday-year-validation" role="alert"></div>
+          </div>
+      </section>
+
+<!-- PHONE NUMBER -->
+<section class="field">
+        
+          <label class="label" for="contact-number">Contact Number&emsp;</label>
+        <input type="tel" id="contact-number" name="contact-number" class="input" placeholder="XXX-XXX-XXX" required data-required-text="Please provide a contact number" data-pattern-mismatch-text="Your contact number isn't a number" pattern="^\d+" aria-describedby="contact-number-validation">
+        <div id="contact-number-validation" class="c-input-validation" role="alert" aria-hidden="true" data-linked-input="contact-number"></div>
+      
+
+ 
+    
+</section>
+
+
+<!-- SECTION EMAIL -->
+  <section id="email" class="field">
+    <!-- TEXT INPUT: EMAIL ADDRESS -->
+  <label class="label" for="username">Email&emsp;</label>
+  <input class="input" type="email" id="username" name="username" placeholder="Email" 
+  required data-required-text="Please enter a valid email address." aria-describedby="email-validation">
+</section>
+<hr />
+<!-- SECTION REFERRAL SOURCE -->
+<section id="radiobuttons">
+<h3 class="is-size-5 has-text-weight-bold has-text-grey-dark">How did you discover our brand?</h3>
+
+  <p class="control">
+        <label class="radio">
+          <input type="radio" name="referral-source">
+          Search Engine
+        </label>
+        </p>
+    
+  <p class="control">
+  <label class="radio">
+    <input type="radio" name="referral-source">
+      Friend
+        </label>
+          </p>
+
+  <p class="control">
+<label class="radio">
+  <input type="radio" name="referral-source" >
+    Television
+    </label>
+      </p>
+    
+  <p class="control">
+<label class="radio">
+  <input type="radio" name="referral-source" >
+    Radio
+    </label>
+      </p>
+<br />
+</section>      
+          
+      
+
+<!-- SUBMIT BUTTONS -->
+<section class="field">
+    <p class="control">
+        <button class="button is-success" type="submit">Submit Application</button>
+        <button class="button is-danger">Reset</button>
+        </p>
+      </section>
+
+
+	
+			
+	</form>
+</main>
+<br />
+<br />
+<footer class="footer">
+  <br />
+<h1 align="center">  <i class="fab fa-github fa-4x"></i>
+</h1>      <br />
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
